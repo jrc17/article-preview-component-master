@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/jrc17/article-preview-component-master)
-- Live Site URL: [Website](https://your-live-site-url.com)
+- Live Site URL: [Website](https://jrc17.github.io/article-preview-component-master/)
 
 ## My process
 
