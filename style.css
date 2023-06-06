@@ -24,12 +24,16 @@ main {
   overflow: hidden;
 }
 
+/* Image */
+
 .image {
   display: flex;
 }
 .drawers-image {
   width: 100%;
 }
+
+/* Article */
 
 .article-preview {
   display: grid;
@@ -39,6 +43,7 @@ main {
 }
 h1 {
   font-size: 1.15rem;
+  color: hsl(217, 19%, 35%);
 }
 .article-preview {
   color: hsl(214, 17%, 51%);
@@ -54,8 +59,10 @@ h1 {
   place-content: center;
 
   padding: 1rem 2rem;
-  animation: moveInBtm 1s ease-out;
 }
+
+/* Author and Share button */
+
 .flex {
   display: flex;
   gap: 0.5rem;
@@ -97,15 +104,12 @@ h1 {
   border-radius: 50%;
 }
 
-.hidden {
-  display: none;
-}
-
 /* after clicking the share button*/
 
 .share-social-link-dark {
   background-color: hsl(217, 19%, 35%);
   margin-bottom: 0;
+  animation: moveInBtm 0.3s ease-out;
 }
 
 .share-button-light {
@@ -113,6 +117,7 @@ h1 {
   filter: brightness(3);
 }
 
+/*Social links which become visible after clicking share button  */
 .share-text {
   text-transform: uppercase;
 
@@ -125,6 +130,13 @@ h1 {
 .social-links {
   display: flex;
   gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+.animate {
+  animation: moveInBtm 0.2s ease-out;
 }
 
 @media screen and (min-width: 44rem) {

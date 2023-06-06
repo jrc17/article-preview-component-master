@@ -7,7 +7,7 @@ const share = document.querySelector(".share-social-links");
 
 const mediaQuery = window.matchMedia("(min-width: 44rem)");
 
-// when switching between the 2 versions put them in the initial state
+// when switching between the 2 versions of screen size put them in the initial state
 
 mediaQuery.addEventListener("change", function (e) {
   share.classList.add("hidden");
@@ -19,6 +19,8 @@ mediaQuery.addEventListener("change", function (e) {
 // when clicked on the share button show the social links
 shareBtn.addEventListener("click", function () {
   share.classList.toggle("hidden");
+  share.classList.toggle("animate");
+
   if (!mediaQuery.matches) {
     // if it the mobile version
     authorShare.classList.toggle("share-social-link-dark");
